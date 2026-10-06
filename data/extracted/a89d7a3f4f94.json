@@ -1,0 +1,18 @@
+{
+  "document_key": "a89d7a3f4f94",
+  "source_pdf": "uploads/documents/a89d7a3f4f94_CNC-003_demo_maintenance.pdf",
+  "page_count": 2,
+  "total_characters": 841,
+  "pages": [
+    {
+      "page": 1,
+      "text": "DIGI-LOGS DEMO MAINTENANCE GUIDE\nDEMO / SYNTHETIC DOCUMENT - NOT AN OFFICIAL OKUMA MANUAL\nMachine ID: CNC-003\nAsset Code: ASSET-CNC-003\nManufacturer: OKUMA\nSeries: GENOS\nModel: M560-V\nPurpose:\nThis document is synthetic demo data for Digi-Logs.\nIt is used to test PDF ingestion, retrieval and citation.",
+      "characters": 302
+    },
+    {
+      "page": 2,
+      "text": "Demo Maintenance Case - Spindle Vibration\nSymptom:\nAbnormal vibration occurs when the spindle runs at high speed.\nPossible cause:\nSpindle belt tension may be below the expected operating range.\nRecommended inspection:\n1. Stop the machine safely.\n2. Inspect spindle belt condition.\n3. Verify belt tension.\n4. Adjust belt tension if required.\n5. Run a controlled verification test.\nExpected result:\nSpindle vibration returns to the normal baseline after adjustment.\nSafety note:\nThis is synthetic demonstration content for Digi-Logs testing.",
+      "characters": 539
+    }
+  ]
+}
