@@ -6,6 +6,7 @@ from app.routers import (
     maintenance,
     scanning,
     documents,
+    knowhow,
 )
 
 
@@ -39,6 +40,12 @@ app.include_router(
 app.include_router(
     documents.router
 )
+
+app.include_router(
+    knowhow.router
+)
+
+
 @app.get("/")
 def root():
     return {
@@ -57,4 +64,3 @@ def health():
         "cloud_required": False,
         "database": "SQLite",
     }
-

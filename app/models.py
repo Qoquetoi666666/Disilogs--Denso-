@@ -233,3 +233,95 @@ class QueryLog(Base):
         DateTime,
         default=datetime.utcnow,
     )
+
+class KnowHowCase(Base):
+    __tablename__ = "knowhow_cases"
+
+    id = Column(
+        Integer,
+        primary_key=True,
+        index=True,
+    )
+
+    knowhow_id = Column(
+        String,
+        unique=True,
+        nullable=False,
+        index=True,
+    )
+
+    machine_id = Column(
+        String,
+        ForeignKey("machines.machine_id"),
+        nullable=False,
+        index=True,
+    )
+
+    title = Column(
+        String,
+        nullable=False,
+    )
+
+    observation = Column(Text)
+
+    hypothesis = Column(Text)
+
+    evidence = Column(Text)
+
+    diagnostic_check = Column(Text)
+
+    ruled_out_causes = Column(Text)
+
+    recommended_action = Column(Text)
+
+    verification = Column(Text)
+
+    result = Column(Text)
+
+    maintenance_record_id = Column(
+        Integer,
+        nullable=True,
+    )
+
+    document_id = Column(
+        Integer,
+        nullable=True,
+    )
+
+    source_page = Column(
+        Integer,
+        nullable=True,
+    )
+
+    source_type = Column(
+        String,
+        default="technician",
+    )
+
+    status = Column(
+        String,
+        default="DRAFT",
+        index=True,
+    )
+
+    confidence = Column(
+        Float,
+        default=0.0,
+    )
+
+    created_by = Column(String)
+
+    reviewed_by = Column(String)
+
+    review_note = Column(Text)
+
+    created_at = Column(
+        DateTime,
+        default=datetime.utcnow,
+    )
+
+    updated_at = Column(
+        DateTime,
+        default=datetime.utcnow,
+        onupdate=datetime.utcnow,
+    )
